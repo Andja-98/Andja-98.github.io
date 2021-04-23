@@ -1,7 +1,8 @@
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import React from "react";
 
-import { ViewUser } from "./features/users/ViewUser";
+import UpdateProfile from "./features/users/UpdateProfile"
+import UserProfile  from "./features/users/UserProfile";
 import { AddUser } from "./features/users/AddUser";
 import { EditUser } from "./features/users/EditUser";
 import { UserList } from "./features/users/UserList";
@@ -15,8 +16,11 @@ export default function App() {
     <Router>
       <div>
         <Switch>
-        <Route path="/view-user">
-            <ViewUser />
+        <Route path="/update-profile">
+            <UpdateProfile />
+          </Route>
+        <Route path="/user-profile">
+            <UserProfile />
           </Route>
           <Route path="/add-user">
             <AddUser />

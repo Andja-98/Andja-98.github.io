@@ -58,7 +58,7 @@ export function UserList() {
                       <Link to={`/edit-user/${id}`}>
                         <button id="btn-btn">Edit</button>
                       </Link>
-                      <Link to={`/view-user/${id}`}>
+                      <Link to={`/user-profile/${id}`}>
                         <button id="btn-btn-btn">View</button>
                       </Link>
                     </td>
