@@ -51,7 +51,7 @@ export function EditUser() {
           <input
             className="u-full-width"
             type="text"
-            placeholder="Anne Graham"
+            placeholder=""
             id="nameInput"
             onChange={handleName}
             value={name}

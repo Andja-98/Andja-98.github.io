@@ -1,25 +1,53 @@
-
-.container{
-    background-color:#f8f8f8 ;
+*{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body{
+    background-color: rgb(245, 240, 240);
+}
+.container{
+    background-color:white ;
+    border:2px solid white;
+    border-radius: 2px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+
+}
+.update-profile{
+   position: fixed;
+   margin:40px;
+   margin-left: 320px;
+   width:50%;
+   padding:20px;
+   background-color: white;
+   text-align: center;
+   border:2px solid white;
+   border-radius: 2px;
+   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+   
+}
+
 .center{
+   position: fixed;
    margin:150px;
    margin-left: 320px;
    width:50%;
    padding:20px;
-   background-color: #f8f8f8;
+   background-color: white;
    text-align: center;
+   border:2px solid white;
+   border-radius: 2px;
+   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+   
 }
 .user-info{
-    margin:150px;
+    display:inline;
+    position:fixed;
+    margin:40px;
     margin-left: 320px;
     width:50%;
     padding:20px;
-    background-color: #f8f8f8;
+    background-color: white;
     text-align: left;
-}
-.back-btn{
-    margin-left: 240px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
 }
 
 h2{
@@ -33,6 +61,7 @@ h2{
     margin-right: 250px;
 }
 
+
 #input{
     color: cadetblue;
 }
@@ -41,28 +70,36 @@ h2{
     width: 180px;
     height: 38px;
     line-height: 35px;
-	border: 2px solid rgb(65, 135, 168);
+	border: 2px solid rgb(68, 178, 197);
 	color:white;
-	background-color:rgb(65, 135, 168);
+	background-color:rgb(68, 178, 197);
     margin: 25px auto 0;
     text-align: center;	
 }
 
 a:hover{
-    border: rgb(65, 135, 168);   
+    border: rgb(99, 187, 214);   
 }
 
 #btn{
-    background-color: cadetblue;
+    background-color: #ffcc5c;
+    border:#ffcc5c;
+}
+
+.back-btn{
+    margin-left: 240px;
 }
 
 #btn-btn{
-    background-color: rgb(65, 135, 168);
+    background-color:  #ffef96;
+    border: #ffef96;
 }
 
 #btn-btn-btn{
-    background-color:rgb(26, 139, 231);
+    background-color:#fefbd8;
+    border:#fefbd8;
 }
+
 .users-table{
     width:90%;
     padding-left: 100px;
@@ -70,4 +107,13 @@ a:hover{
 
 #head-tr{
     color: cadetblue;  
+}
+
+.far{
+    font-size: 25px;
+}
+
+ul{
+    list-style-type: square;
+    color: rgb(65, 135, 168);
 }

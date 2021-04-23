@@ -22,7 +22,7 @@ const User = () => {
   return (
     
     <div className="user-info">
-      <h2 className="display-4">User Id: {id}</h2>
+      <h2 className="display-4"><i class='fas'>&#xf406;</i> User Id: {id}</h2>
       <div><Link className="button" to="/update-profile/">
         Update profile
       </Link>
@@ -36,6 +36,7 @@ const User = () => {
         <li className="list-group-item">Birthday: {user.birthday}</li>
         <li className="list-group-item">User level: {user.userlevel}</li>
         <li className="list-group-item">Address: {user.address}</li>
+        <li className="list-group-item">Linkedin: {user.linkedin}</li>
       </ul>
       <div className="back-btn">
       <Link className="button" to="/">

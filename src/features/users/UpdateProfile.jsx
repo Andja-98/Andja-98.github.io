@@ -12,10 +12,11 @@ const EditUser = () => {
     email: "",
     phone: "",
     birthday: "",
-    address:""
+    address:"",
+    linkedin:""
   });
 
-  const { name, username, email, phone, birthday,address} = user;
+  const { name, username, email, phone, birthday,address,linkedin} = user;
   const onInputChange = e => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
@@ -35,7 +36,7 @@ const EditUser = () => {
     setUser(result.data);
   };
   return (
-    <div className="center">
+    <div className="update-profile">
       <div className="w-75 mx-auto shadow p-5">
         <h2 className="text-center mb-4">Update your profile</h2>
         <form onSubmit={e => onSubmit(e)}>
@@ -43,7 +44,7 @@ const EditUser = () => {
             <input
               type="text"
               className="form-control form-control-lg"
-              placeholder="Enter Your Name"
+              placeholder="Your Name"
               name="name"
               value={name}
               onChange={e => onInputChange(e)}
@@ -53,7 +54,7 @@ const EditUser = () => {
             <input
               type="text"
               className="form-control form-control-lg"
-              placeholder="Enter Your Username"
+              placeholder="Your Username"
               name="username"
               value={username}
               onChange={e => onInputChange(e)}
@@ -63,7 +64,7 @@ const EditUser = () => {
             <input
               type="email"
               className="form-control form-control-lg"
-              placeholder="Enter Your E-mail Address"
+              placeholder="Your E-mail "
               name="email"
               value={email}
               onChange={e => onInputChange(e)}
@@ -73,7 +74,7 @@ const EditUser = () => {
             <input
               type="text"
               className="form-control form-control-lg"
-              placeholder="Enter Your Phone Number"
+              placeholder="Your Phone Number"
               name="phone"
               value={phone}
               onChange={e => onInputChange(e)}
@@ -83,7 +84,7 @@ const EditUser = () => {
             <input
               type="text"
               className="form-control form-control-lg"
-              placeholder="Enter Your Birthday"
+              placeholder="Your Birthday"
               name="birthday"
               value={birthday}
               onChange={e => onInputChange(e)}
@@ -93,9 +94,19 @@ const EditUser = () => {
             <input
               type="text"
               className="form-control form-control-lg"
-              placeholder="Enter Your Address"
+              placeholder="Your Address"
               name="address"
               value={address}
+              onChange={e => onInputChange(e)}
+            />
+          </div>
+          <div className="form-group">
+            <input
+              type="text"
+              className="form-control form-control-lg"
+              placeholder="Your Linkedin"
+              name="linkedin"
+              value={linkedin}
               onChange={e => onInputChange(e)}
             />
           </div>

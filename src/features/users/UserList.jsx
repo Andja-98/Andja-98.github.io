@@ -17,19 +17,14 @@ export function UserList() {
   return (
     <div className="container">
       <div className="row-row">
-      </div>
-      <div className="row-row">
-        <div className="two columns">
-          <button
-            onClick={() => dispatch(fetchUsers())}
-            className="button-primary"
-          >
-            Load users
-          </button>
-        </div>
-        <div className="two columns">
+        <div className="three columns">
           <Link to="/add-user">
-            <button className="button-primary">Add user</button>
+            <button className="button-primary"> Add user</button>
+          </Link>
+        </div>
+        <div className="three columns">
+          <Link to="button" to="/">
+           <button className="button-primary">Log out</button>
           </Link>
         </div>
       </div>
