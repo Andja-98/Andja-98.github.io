@@ -35,7 +35,10 @@ export class LoginPage extends React.Component {
         const { loggingIn } = this.props;
         const { username, password, submitted } = this.state;
         return (
-            <div className="center">
+            <div className="login-body">
+            <img src="user_icon.png"/>
+            <div className="two-parts">
+               
                 <h2>Log in</h2>
                 <form name="form" onSubmit={this.handleSubmit}>
                  
@@ -56,6 +59,7 @@ export class LoginPage extends React.Component {
                         {loggingIn }
                     </div>
                 </form>
+            </div>
             </div>
               );
             }

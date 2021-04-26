@@ -16,9 +16,6 @@ export function UserList() {
  
   return (
     <div className="container">
-      
-      
-        
           <table className="users-table">
             <thead id="head-tr">
               <tr>
