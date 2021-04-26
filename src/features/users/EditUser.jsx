@@ -66,7 +66,7 @@ export function EditUser() {
             value={email}
           />
           {error && error}
-          <button onClick={handleClick} className="button-primary">
+          <button onClick={handleClick} className="button">
             Save user
           </button>
         </div>

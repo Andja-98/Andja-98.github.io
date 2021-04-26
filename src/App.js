@@ -8,14 +8,13 @@ import { EditUser } from "./features/users/EditUser";
 import { UserList } from "./features/users/UserList";
 import {LoginPage } from './features/LoginPage';
 
-
 export default function App() {
   return (
   
     <Router>
-      <div>
-        <Switch>
-        <Route path="/update-profile">
+      
+  <Switch>
+    <Route path="/update-profile">
             <UpdateProfile />
           </Route>
         <Route path="/user-profile">
@@ -34,8 +33,8 @@ export default function App() {
             <LoginPage/>
           </Route>
         </Switch>
-      </div>
     </Router>
+   
 
   );
 }

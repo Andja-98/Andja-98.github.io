@@ -38,6 +38,7 @@ export class LoginPage extends React.Component {
             <div className="center">
                 <h2>Log in</h2>
                 <form name="form" onSubmit={this.handleSubmit}>
+                 
                     <div className={'form-group' + (submitted && !username ? ' has-error' : '')}>
                         <input type="text" className="form-control" name="username" placeholder="Username"value={username} onChange={this.handleChange} />
                         {submitted && !username &&

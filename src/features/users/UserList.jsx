@@ -1,8 +1,9 @@
-import { fetchUsers, userDeleted } from "./usersSlice";
+import { userDeleted } from "./usersSlice";
 import { useDispatch, useSelector } from "react-redux";
-
 import { Link } from "react-router-dom";
 import '../Style.css';
+
+
 
 export function UserList() {
   const dispatch = useDispatch();
@@ -13,21 +14,10 @@ export function UserList() {
   const handleDelete = (id) => {
     dispatch(userDeleted({ id }));
   };
-
+ 
   return (
     <div className="container">
-      <div className="row-row">
-        <div className="three columns">
-          <Link to="/add-user">
-            <button className="button-primary"> Add user</button>
-          </Link>
-        </div>
-        <div className="three columns">
-          <Link to="button" to="/">
-           <button className="button-primary">Log out</button>
-          </Link>
-        </div>
-      </div>
+      
       <div className="row-row">
         {loading ? (
           "Loading..."
@@ -49,12 +39,12 @@ export function UserList() {
                     <td>{name}</td>
                     <td>{email}</td>
                     <td>
-                      <button onClick={() => handleDelete(id)} id="btn">Delete</button>
+                      <button onClick={() => handleDelete(id)} id="delete-button">Delete</button>
                       <Link to={`/edit-user/${id}`}>
-                        <button id="btn-btn">Edit</button>
+                        <button id="edit-button">Edit</button>
                       </Link>
                       <Link to={`/user-profile/${id}`}>
-                        <button id="btn-btn-btn">View</button>
+                        <button id="view-button">View</button>
                       </Link>
                     </td>
                   </tr>
@@ -65,4 +55,4 @@ export function UserList() {
       </div>
     </div>
   );
-}
+};

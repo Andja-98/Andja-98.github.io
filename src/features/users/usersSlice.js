@@ -33,9 +33,6 @@ const usersSlice = createSlice({
     },
   },
   extraReducers: {
-    [fetchUsers.pending]: (state, action) => {
-      state.loading = true;
-    },
     [fetchUsers.fulfilled]: (state, action) => {
       state.loading = false;
       state.entities = [...state.entities, ...action.payload];
