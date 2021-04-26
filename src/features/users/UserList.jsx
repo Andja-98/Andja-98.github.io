@@ -9,8 +9,7 @@ export function UserList() {
   const dispatch = useDispatch();
 
   const { entities } = useSelector((state) => state.users);
-  const loading = useSelector((state) => state.loading);
-
+  
   const handleDelete = (id) => {
     dispatch(userDeleted({ id }));
   };
@@ -18,10 +17,8 @@ export function UserList() {
   return (
     <div className="container">
       
-      <div className="row-row">
-        {loading ? (
-          "Loading..."
-        ) : (
+      
+        
           <table className="users-table">
             <thead id="head-tr">
               <tr>
@@ -51,8 +48,8 @@ export function UserList() {
                 ))}
             </tbody>
           </table>
-        )}
+        
       </div>
-    </div>
+    
   );
 };

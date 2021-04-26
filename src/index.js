@@ -7,7 +7,6 @@ import { fetchUsers } from "./features/users/usersSlice";
 import store from "./store";
 
 
-
 store.dispatch(fetchUsers());
 
 ReactDOM.render(

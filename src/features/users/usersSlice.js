@@ -10,7 +10,6 @@ const usersSlice = createSlice({
   name: "users",
   initialState: {
     entities: [],
-    loading: false,
   },
   reducers: {
     userAdded(state, action) {
@@ -34,11 +33,7 @@ const usersSlice = createSlice({
   },
   extraReducers: {
     [fetchUsers.fulfilled]: (state, action) => {
-      state.loading = false;
       state.entities = [...state.entities, ...action.payload];
-    },
-    [fetchUsers.rejected]: (state, action) => {
-      state.loading = false;
     },
   },
 });

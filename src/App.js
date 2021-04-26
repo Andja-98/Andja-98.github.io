@@ -11,8 +11,7 @@ import {LoginPage } from './features/LoginPage';
 export default function App() {
   return (
   
-    <Router>
-      
+    <Router>    
   <Switch>
     <Route path="/update-profile">
             <UpdateProfile />
